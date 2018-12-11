@@ -2,12 +2,10 @@ package com.example.bzdeco.notificationservice;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,18 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onStartButtonClicked(View view) {
-        Intent service = new Intent(this, NotificationService.class);
-        EditText title = findViewById(R.id.notificationTitle);
-        EditText text = findViewById(R.id.notificationContent);
-        EditText frequency = findViewById(R.id.frequency);
-        EditText times = findViewById(R.id.times);
 
-        service.putExtra(NotificationService.TITLE, title.getText().toString());
-        service.putExtra(NotificationService.TEXT, text.getText().toString());
-        service.putExtra(NotificationService.FREQUENCY, Integer.parseInt(frequency.getText().toString()));
-        service.putExtra(NotificationService.TIMES, Integer.parseInt(times.getText().toString()));
-
-        startService(service);
     }
 
     // Source: https://developer.android.com/training/notify-user/build-notification
