@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">NotificationService</string>
-    <string name="hint_notification">Enter notification message&#8230;</string>
-    <string name="frequency_label">How often (s)</string>
+    <string name="app_name">Notification Service</string>
     <string name="button_start">Start</string>
     <string name="button_stop">Stop</string>
-    <string name="button_update">Update</string>
+    <string name="title_hint">Notification title</string>
+    <string name="text_hint">Notification content</string>
+    <string name="frequency_hint">How often to notify (in seconds)</string>
+    <string name="times_hint">How many times to notify</string>
 </resources>
